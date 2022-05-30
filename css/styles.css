@@ -113,6 +113,10 @@ ul {
 	text-align: center;
 	padding-top: 200px;
 	padding-bottom: 200px;
+	background-image: url(../images/background-img.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto;
 }
 
 .hero-title {
