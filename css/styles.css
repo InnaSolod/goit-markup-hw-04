@@ -89,9 +89,21 @@ ul {
 	display: flex;
 	margin-left: auto;
 }
+.contacts::before {
+	content: "";
+	background-image: url(../images/envelope.svg);
+	background-size: contain;
+	width: 16px;
+	height: 12px;
+	margin-top: 34px;
+	margin-bottom: 34px;
+	margin-right: 10px;
+
+}
 .contacts li + li {
 	margin-left: 50px;
 }
+
 .contacts a {
 	padding-top: 32px;
 	padding-bottom: 32px;
@@ -113,10 +125,10 @@ ul {
 	text-align: center;
 	padding-top: 200px;
 	padding-bottom: 200px;
-	background-image: url(../images/background-img.jpg);
+	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-img.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: auto;
+	background-size: cover;
 }
 
 .hero-title {
@@ -159,6 +171,29 @@ ul {
 .text li {
 	width: 270px;
 }
+.text-item::before {
+	content: "";
+	display: block;
+	background-color: var(--background-team);
+	width: 270px;
+	height: 120px;
+	margin-bottom: 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.text-item:nth-child(1)::before {
+	background-image: url(../images/antenna-1.svg);
+}
+.text-item:nth-child(2)::before {
+	background-image: url(../images/clock-1.svg);
+}
+.text-item:nth-child(3)::before {
+	background-image: url(../images/diagram-1.svg);
+}
+.text-item:nth-child(4)::before {
+	background-image: url(../images/astronaut-1.svg);
+}
+
 .text li + li {
 	margin-left: 30px;
 }
@@ -203,6 +238,15 @@ ul {
 .team-foto img {
 	display: block;
 }
+
+.team-card {
+	background-color: var(--text-white-color);
+	width: 270px;
+	height: 428px;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+}
+
 .title {
 	margin-bottom: 50px;
 	margin-top: 0;
