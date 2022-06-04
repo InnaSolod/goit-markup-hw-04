@@ -424,6 +424,10 @@ ul {
 .social li:last-child {
 	margin-right: 0;
 }
+.social li:hover,
+.social li:focus {
+	background-color: var(--accent-color);
+}
 
 .footer .container {
 	display: flex;
@@ -476,4 +480,7 @@ address {
 .contacts-footer a:hover,
 .contacts-footer a:focus {
 	color: var(--accent-color);
+}
+.social-icon {
+	fill: var(--text-white-color);
 }
